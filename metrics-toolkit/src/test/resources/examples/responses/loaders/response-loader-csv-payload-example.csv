@@ -1,0 +1,249 @@
+name,value,businessGroup,date,group,environmentType,environmentName
+Users Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Active Users,1,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Inactive Users,0,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Active Users Last 60 days,0,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Active Users Last 30 days,0,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Environments Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Environments Production Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Environments Sandbox Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Access Management,NA,NA
+Design Center Assets Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Design Center,NA,NA
+Design Center API Specs Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Design Center,NA,NA
+Design Center Fragments Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Design Center,NA,NA
+Design Center Flow Designer Apps Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Design Center,NA,NA
+Exchange Assets Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange API Specs Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange Connectors Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange Fragments Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange HTTP Proxies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange Extensions Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange Custom Assets Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+Exchange Overall Satisfaction,0,Fantasy Company,2021-11-22T14:05:05.695Z,Exchange,NA,NA
+CloudHub VPCs Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub VPCs Available Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub VPCs Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub VPNs Total,6,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub VPNs Available Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub VPNs Used Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub DLBs Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub DLBs Available Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub DLBs Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub Static IPs Total,26,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub Static IPs Available Total,5,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+CloudHub Static IPs Used Total,21,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,NA,NA
+API Manager Client Applications Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,NA,NA
+CloudHub vCores Total,13,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,NA
+CloudHub vCores Available Total,12.9,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,NA
+CloudHub vCores Total,47,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,NA
+CloudHub vCores Available Total,46.7,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,NA
+RTF Fabrics Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Workers Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Controllers Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Cores Total,16.65,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Memory Total,94.476,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Cores Per Fabric Average,16.65,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+RTF Memory Per Fabric Average,94.476,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,NA,NA
+API Manager API Specs Managed Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Active Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Inactive Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Versions Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances With Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Without Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances With Security Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Without Security Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances With Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances Without Contracts Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances With More Than One Consumer Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Instances With One or More Consumers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager API Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager Policies Used,client-id-enforcement,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager Policies Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager Automated Policies Used,,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Manager Automated Policies Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Production,Production
+API Analytics Transactions Last 30 days Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Analytics,Production,Production
+API Manager API Specs Managed Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Active Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Inactive Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Versions Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances With Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Without Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances With Security Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Without Security Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances With Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances Without Contracts Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances With More Than One Consumer Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Instances With One or More Consumers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager API Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager Policies Used,client-id-enforcement,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager Policies Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager Automated Policies Used,,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Manager Automated Policies Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Development
+API Analytics Transactions Last 30 days Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Analytics,Sandbox,Development
+API Manager API Specs Managed Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Active Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Inactive Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Versions Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances With Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Without Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances With Security Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Without Security Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances With Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances Without Contracts Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances With More Than One Consumer Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Instances With One or More Consumers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager API Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager Policies Used,client-id-enforcement,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager Policies Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager Automated Policies Used,,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Manager Automated Policies Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Staging
+API Analytics Transactions Last 30 days Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Analytics,Sandbox,Staging
+API Manager API Specs Managed Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Active Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Inactive Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Versions Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances With Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Without Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances With Security Policies Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Without Security Policies Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances With Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances Without Contracts Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances With More Than One Consumer Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Instances With One or More Consumers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager API Contracts Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager Policies Used,client-id-enforcement,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager Policies Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager Automated Policies Used,,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Manager Automated Policies Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Manager,Sandbox,Test
+API Analytics Transactions Last 30 days Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,API Analytics,Sandbox,Test
+CloudHub vCores Used Total,0.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub Applications Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub Runtime Versions Used,4.1.5 4.2.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub Runtime Versions Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Production,Production
+CloudHub vCores Used Total,0.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub Applications Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub Runtime Versions Used,4.1.5 4.2.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub Runtime Versions Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Development
+CloudHub vCores Used Total,0.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub Applications Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub Runtime Versions Used,4.1.5 4.2.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub Runtime Versions Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Staging
+CloudHub vCores Used Total,0.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+CloudHub Applications Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+CloudHub Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+CloudHub Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+CloudHub Runtime Versions Used,4.1.5 4.2.1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+CloudHub Runtime Versions Used Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - CloudHub,Sandbox,Test
+RTF Cores Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Cores Reserved Total,0.4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Memory Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Applications Stopped Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Runtime Versions Used,4.2.1:v1.2.19,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Runtime Versions Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Production,Production
+RTF Cores Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Cores Reserved Total,0.4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Memory Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Applications Stopped Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Runtime Versions Used,4.2.1:v1.2.19,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Runtime Versions Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Development
+RTF Cores Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Cores Reserved Total,0.4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Memory Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Applications Stopped Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Runtime Versions Used,4.2.1:v1.2.19,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Runtime Versions Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Staging
+RTF Cores Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Cores Reserved Total,0.4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Memory Used Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Applications Started Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Applications Stopped Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Runtime Versions Used,4.2.1:v1.2.19,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+RTF Runtime Versions Used Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - RTF,Sandbox,Test
+Standalone Mule Servers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Clusters Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Server Groups Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Applications Started Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Runtime Versions,4.2.0 4.1.4 4.1.5,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Runtime Versions Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Production,Production
+Standalone Mule Servers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Clusters Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Server Groups Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Applications Started Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Runtime Versions,4.2.0 4.1.4 4.1.5,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Runtime Versions Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Development
+Standalone Mule Servers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Clusters Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Server Groups Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Applications Started Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Runtime Versions,4.2.0 4.1.4 4.1.5,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Runtime Versions Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Staging
+Standalone Mule Servers Total,4,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Clusters Total,2,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Server Groups Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Applications Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Applications Started Total,0,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Applications Stopped Total,1,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Runtime Versions,4.2.0 4.1.4 4.1.5,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Standalone Mule Runtime Versions Total,3,Fantasy Company,2021-11-22T14:05:05.695Z,Runtime Manager - ARM,Sandbox,Test
+Anypoint MQ - Total Queues,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Total FIFO Queues,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Queues - Total Messages Sent,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Queues - Total Messages Received,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Queues - Total Messages ACK,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Queues - Total Messages In Flight,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Total Exchanges,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Exchanges - Total Messages Published,336,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Exchanges - Total Messages Delivered,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Production,Production
+Anypoint MQ - Total Queues,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Total FIFO Queues,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Queues - Total Messages Sent,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Queues - Total Messages Received,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Queues - Total Messages ACK,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Queues - Total Messages In Flight,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Total Queues,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Total FIFO Queues,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Queues - Total Messages Sent,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Queues - Total Messages Received,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Queues - Total Messages ACK,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Queues - Total Messages In Flight,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Total Queues,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Total FIFO Queues,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Queues - Total Messages Sent,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Queues - Total Messages Received,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Queues - Total Messages ACK,686,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Queues - Total Messages In Flight,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Total Exchanges,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Exchanges - Total Messages Published,336,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Exchanges - Total Messages Delivered,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Development
+Anypoint MQ - Total Exchanges,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Exchanges - Total Messages Published,336,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Exchanges - Total Messages Delivered,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Staging
+Anypoint MQ - Total Exchanges,7,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Exchanges - Total Messages Published,336,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+Anypoint MQ - Exchanges - Total Messages Delivered,0,Fantasy Company,2021-11-22T14:05:05.695Z,Anypoint MQ,Sandbox,Test
+OSv2 - Request count,104027,Fantasy Company,2021-11-22T14:05:05.695Z,ObjectStore V2,Production,Production
+OSv2 - Request count,104027,Fantasy Company,2021-11-22T14:05:05.695Z,ObjectStore V2,Sandbox,Development
+OSv2 - Request count,104027,Fantasy Company,2021-11-22T14:05:05.695Z,ObjectStore V2,Sandbox,Staging
+OSv2 - Request count,104027,Fantasy Company,2021-11-22T14:05:05.695Z,ObjectStore V2,Sandbox,Test

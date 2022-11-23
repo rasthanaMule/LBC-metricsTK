@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": "e527a61c-d9f4-4502-ad8d-a71b87fa353f",
+      "name": "Design",
+      "organizationId": "877baaaa-36ba-4021-82d5-45bae78e0fe2",
+      "isProduction": false,
+      "type": "design",
+      "clientId": "***REMOVED***"
+    },
+    {
+      "id": "7e1c7d31-80a2-46ee-9118-fae5f3ed0d79",
+      "name": "Development",
+      "organizationId": "877baaaa-36ba-4021-82d5-45bae78e0fe2",
+      "isProduction": false,
+      "type": "sandbox",
+      "clientId": "***REMOVED***"
+    },
+    {
+      "id": "0629ce85-4ba2-49ca-b487-28f4db3d37bb",
+      "name": "Production",
+      "organizationId": "877baaaa-36ba-4021-82d5-45bae78e0fe2",
+      "isProduction": true,
+      "type": "production",
+      "clientId": "***REMOVED***"
+    },
+    {
+      "id": "ea57c23e-bfc6-469d-9713-657120452f6b",
+      "name": "Staging",
+      "organizationId": "877baaaa-36ba-4021-82d5-45bae78e0fe2",
+      "isProduction": false,
+      "type": "sandbox",
+      "clientId": "***REMOVED***"
+    },
+    {
+      "id": "fef8f989-845d-4ebf-bf84-4bc2518f4650",
+      "name": "Test",
+      "organizationId": "877baaaa-36ba-4021-82d5-45bae78e0fe2",
+      "isProduction": false,
+      "type": "sandbox",
+      "clientId": "***REMOVED***"
+    }
+  ],
+  "total": 5
+}

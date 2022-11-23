@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+
+
+	<flow name="api-call-coreservices-login-flow" doc:id="c336bb42-e18a-4f7f-9c10-d210024c443c">
+		<logger level="DEBUG" doc:name="Logger" doc:id="fde73538-32e8-4c37-bc8e-a343e50f0522" message="Calling Coreservices - Login" />
+		<choice doc:name="Choice" doc:id="917c49c1-a155-41e6-abfe-8e320fc7b501" >
+			<when expression="#[vars.authMode == 'connected-app-credentials']">
+				<ee:transform doc:name="Build Connected App Credentials Login Request" doc:id="5eaea0ca-f420-4d6f-8b36-7a7001ab19b8">
+			<ee:message>
+						<ee:set-payload resource="dw/anypoint/coreservices-build-connected-app-login-request.dwl" />
+			</ee:message>
+		</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Build Platform Credentials Login Request" doc:id="417f5d0e-fc59-4df9-a9d0-af43957e772f" >
+					<ee:message >
+						<ee:set-payload resource="dw/anypoint/coreservices-build-platform-login-request.dwl" />
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+		<http:request method="POST" doc:name="Post Login Request" doc:id="560a71f8-55b6-402b-b0e6-cfd411340797" config-ref="HTTP_Request_configuration"
+			path="#[if (vars.authMode == 'connected-app-credentials')
+  Mule::p('anypoint.platform.apis.coreservices.token.path')
+else
+  Mule::p('anypoint.platform.apis.coreservices.login.path')]" >
+		</http:request>
+			
+		<logger level="DEBUG" doc:name="Logger" doc:id="94b6e2e7-72f9-4957-8c55-103ad0fe8765" message='#["Coreservices - Login, Response Status Code:" ++ attributes.statusCode]' />
+	</flow>
+
+	<flow name="api-call-coreservices-login-cache-flow" doc:id="48481958-9a25-435b-a50d-32ccc993a661">
+		<ee:cache doc:name="Cache" doc:id="386abad4-1802-4ebd-868d-4cce5adc627a" cachingStrategy-ref="Caching_Strategy">
+			<flow-ref doc:name="Login Flow Reference" doc:id="3f2ec75e-c320-4855-8725-228e401e595c" name="api-call-coreservices-login-flow" />
+		</ee:cache>
+	</flow>
+
+	<flow name="api-call-coreservices-environments-flow" doc:id="cb45e4dc-7fd3-476d-aff3-7c0a30556088" maxConcurrency="${anypoint.platform.apis.coreservices.maxConcurrency}">
+		<logger level="DEBUG" doc:name="Logger" doc:id="c04d063d-9f26-41c8-9f2c-efd64bc5a457" message="Calling Coreservices - Environments" />
+		<http:request method="GET" doc:name="Get Environments Request" doc:id="ea3a4010-08c1-44e9-b9d4-a82201dbb162" config-ref="HTTP_Request_configuration"
+			path="${anypoint.platform.apis.coreservices.environments.path}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ vars.token
+}]]]></http:headers>
+			<http:uri-params><![CDATA[#[output application/java
+---
+{
+	"orgId" : vars.orgId
+}]]]></http:uri-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="Logger" doc:id="44625425-13b2-42b6-9886-1bbbe2de07fb" message='#["Coreservices - Environments, Response Status Code:" ++ attributes.statusCode]' />
+		<ee:transform doc:name="Transform Message" doc:id="2a9dbdf0-20f2-4e7a-a43c-cb311cf3158e" >
+			<ee:message >
+				<ee:set-payload resource="dw/anypoint/coreservices-filter-environments.dwl" />
+			</ee:message>
+		</ee:transform>
+	</flow>
+	
+	<flow name="api-call-coreservices-usage-flow" doc:id="d5bf088a-61dd-443f-9308-0bdcd9ad5e8b" maxConcurrency="${anypoint.platform.apis.coreservices.maxConcurrency}">
+		<logger level="DEBUG" doc:name="Logger" doc:id="93c413e8-e344-4c8f-ac2e-c6e5c3bfc889" message="Calling Coreservices - Usage" />
+		<http:request method="GET" doc:name="Get Usage Request" doc:id="281a7b5b-2f36-47f2-9681-f1a3259542d2" config-ref="HTTP_Request_configuration"
+			path="${anypoint.platform.apis.coreservices.usage.path}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ vars.token
+}]]]></http:headers>
+			<http:uri-params><![CDATA[#[output application/java
+---
+{
+	"orgId" : vars.orgId
+}]]]></http:uri-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="Logger" doc:id="ffee6271-74d2-421b-be0a-6002d720b680" message='#["Coreservices - Usage, Response Status Code:" ++ attributes.statusCode]' />
+	</flow>
+
+	<flow name="api-call-coreservices-members-flow" doc:id="af3a3923-4a28-43e9-89ba-5dc520f370cd" maxConcurrency="${anypoint.platform.apis.coreservices.maxConcurrency}">
+		<logger level="DEBUG" doc:name="Logger" doc:id="6aba3216-787a-449f-8431-eb7e33e92dbd" message="Calling Coreservices - Members" />
+		<ee:transform doc:name="offset" doc:id="faede030-995a-463c-b9c4-42ec3eef0166">
+			<ee:message>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable resource="dw/anypoint/save-offset-var.dwl" variableName="offset" />
+			</ee:variables>
+		</ee:transform>
+		<http:request method="GET" doc:name="Get Members Request" doc:id="c6221f3e-e86b-47fa-a787-594af6270aed" config-ref="HTTP_Request_configuration"
+			path="${anypoint.platform.apis.coreservices.members.path}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ vars.token
+}]]]></http:headers>
+			<http:uri-params><![CDATA[#[output application/java
+---
+{
+	"orgId" : vars.orgId
+}]]]></http:uri-params>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"offset" : vars.offset,
+	"limit" : Mule::p('anypoint.platform.apis.coreservices.members.limit')
+}]]]></http:query-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="Logger" doc:id="a233a091-8815-44fa-964c-c23d10de76a1" message='#["Coreservices - Members, Response Status Code:" ++ attributes.statusCode]' />
+		<flow-ref doc:name="Check if need to request more members" doc:id="a3c5a3d6-fd7f-4ef5-97a8-ecf0bd2db6b5" name="call-paginated-members-if-required-subflow"/>
+	</flow>
+	
+	<sub-flow name="call-paginated-members-if-required-subflow" doc:id="ed20d824-a1cc-4b61-b6ab-50a6f4ea0996" >
+		<ee:transform doc:name="membersTotalObtained" doc:id="1cabfddb-99c2-40fd-999a-020d74bb7c3a">
+			<ee:message>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable resource="dw/anypoint/save-members-obtained.dwl" variableName="membersTotalObtained" />
+			</ee:variables>
+		</ee:transform>
+		<choice doc:name="Are there remaining  members?" doc:id="b8e537b2-d9e5-4909-9222-1ab4eb5d959c">
+			<when expression="#[vars.membersTotalObtained &lt; payload.total]">
+				<ee:transform doc:name="aggregatedMemberPayload" doc:id="cce5ce26-2566-4baa-a7da-0fce10ab57bc">
+					<ee:message>
+					</ee:message>
+					<ee:variables>
+						<ee:set-variable resource="dw/anypoint/save-aggregated-member-payload-var.dwl" variableName="aggregatedMemberPayload" />
+					</ee:variables>
+				</ee:transform>
+				<set-variable value="#[vars.offset + Mule::p('anypoint.platform.apis.coreservices.members.limit')]" doc:name="offset" doc:id="ee7c9be2-378e-4bae-9a2a-b2e99f0b5e36" variableName="offset" />
+				<flow-ref doc:name="Get more members" doc:id="27b381a9-2c88-4195-890d-8296480fa54c" name="api-call-coreservices-members-flow" />
+			</when>
+			<otherwise>
+				<logger level="INFO" doc:name="Logger" doc:id="9ff21e33-66a3-435c-a59d-21db9e6db46c" message="No remaining Members"/>
+				<ee:transform doc:name="aggregatedMemberPayload as Payload" doc:id="6b382f4f-ba62-476f-bcc7-27226b58f9cc">
+					<ee:message>
+						<ee:set-payload resource="dw/anypoint/save-aggregated-member-payload-var.dwl" />
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+	</sub-flow>
+	
+	<flow name="api-call-coreservices-rolegroups" doc:id="1bb94c6a-d222-4874-b208-4d0e8a7eacf8">
+		<logger level="DEBUG" doc:name="Logger" doc:id="afd73d5a-20ed-4091-89fd-153a37c6881e" message="Calling Coreservices - RoleGroups" />
+		<http:request method="GET" doc:name="Get RoleGroups Request" doc:id="78a8cbb4-8721-4a52-b01a-96c0e40ce173" config-ref="HTTP_Request_configuration" path="${anypoint.platform.apis.coreservices.rolegroups.path}">
+		<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ vars.token
+}]]]></http:headers>
+			<http:uri-params><![CDATA[#[output application/java
+---
+{
+	"orgId" : vars.orgId
+}]]]></http:uri-params>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"offset" : p('anypoint.platform.apis.coreservices.rolegroups.offset'),
+	"limit" : p('anypoint.platform.apis.coreservices.rolegroups.limit')
+}]]]></http:query-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="Logger" doc:id="456a9478-33f7-4bc8-b9be-07f971121f85" message='#["Response Status Code:" ++ attributes.statusCode]' />
+	</flow>
+	
+	<flow name="api-call-coreservices-organizations-flow" doc:id="cef7e93b-b2dc-4ff3-8cf4-582ead99cfcc" maxConcurrency="${anypoint.platform.apis.coreservices.maxConcurrency}">
+		<logger level="DEBUG" doc:name="Logger" doc:id="224fabbf-19d2-4f85-894f-85e95170afe9" message="Calling Coreservices - Hierarchy" />
+		<http:request method="GET" doc:name="Get Hierarchy Request" doc:id="dc7dbe11-676b-4de2-8622-21a22e01f67a" config-ref="HTTP_Request_configuration"
+			path="${anypoint.platform.apis.coreservices.hierarchy.path}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ vars.token
+}]]]></http:headers>
+			<http:uri-params><![CDATA[#[output application/java
+---
+{
+	"orgId" : vars.masterOrgId
+}]]]></http:uri-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="Logger" doc:id="30b6eab1-e157-488d-a99e-c530e720923f" message='#["Coreservices - Hierarchy, Response Status Code:" ++ attributes.statusCode]' />
+	</flow>
+</mule>

@@ -1,0 +1,17 @@
+{
+	"collectors": ["all"],
+	"loaderDetails": {
+		"strategy": "splunk",
+		"rawData": "false",
+		"splunk": {
+			"host": "localhost",
+			"port": "8088",
+			"protocol": "HTTP",
+			"token": "***TOKEN***",
+			"platformMetricsIndex": "metrics",
+			"platformBenefitsIndex": "platform_benefits",
+			"source": "metrics-source",
+			"sourceType": "_json"
+		}
+	}
+}
